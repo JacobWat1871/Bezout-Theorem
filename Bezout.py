@@ -1,5 +1,4 @@
 old_function = "x^4+2x^3-5x^2+2x-3"
-index_insert = 0
 def Bezout(old_function, x0):
     #analiza wzoru funkcji:
     index_insert = 0
@@ -7,7 +6,7 @@ def Bezout(old_function, x0):
     wspol = []
     h = []
     result = 0
-    stopien = function[3]
+    stopien = function[3]  # for future changes
     for i in range(len(function)):
         if function[i] != "x" and function[i] != "+":
             h.append(function[i])
